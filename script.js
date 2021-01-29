@@ -23,7 +23,7 @@ function removeLoadingSpinner(){
 // Get quote from API
 async function getQuote(){
     showLoadingSpinner();
-    // const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+    
     const apiUrl = 'https://type.fit/api/quotes';
 
     try {
@@ -47,11 +47,7 @@ async function getQuote(){
         removeLoadingSpinner();
 
     }catch(error){
-        // let counter = 0;
-        // while(counter<10){
-        //     getQuote();
-        //     counter++
-        // }
+
         console.log('there is a error',error);
     }
 }
